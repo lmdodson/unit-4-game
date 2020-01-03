@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(68, 71, 71);
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#game-area {
+    display: grid;
+    grid-template-columns: auto auto 40%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        'header header header'
+        'guess target rules'
+        'guess target rules'
+        'crystal crystal stats';
+    gap: 20px;
+}
+
+#game-area>div {
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+}
+
+#heading {
+    grid-area: header;
+    text-align: center;
+    font-size: 80px;
+
+}
+
+#rules {
+    grid-area: rules;
+    background-color: black;
+}
+
+.directions {
+    font-size: 30px;
+}
+
+#stats {
+    grid-area: stats;
+    background-color: black;
+    font-size: 30px;
+
+}
+
+#target-number {
+    grid-area: target;
+    background-color: black;
+}
+
+#user-number {
+    grid-area: guess;
+    background-color: black;
+}
+
+.crystals {
+    grid-area: crystal;
+    background-color: black;
+    display: inline;
+}
+
+.gem {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    float: left;
+    margin: 50px;
+}
+
+.gem-1 {
+    background-image: url(../images/gemGreen.png);
+    background-size: cover;
+    width: 115px;
+}
+
+.gem-2 {
+    background-image: url(../images/gemPurple.png);
+}
+
+.gem-3 {
+    background-image: url(../images/gemRuby.png);
+}
+
+.gem-4 {
+    background-image: url(../images/gemYellow.png);
+}
