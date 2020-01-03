@@ -1,7 +1,9 @@
 body {
-    background-color: rgb(68, 71, 71);
+    background-color: rgb(51, 50, 51);
     color: white;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    /* background: url(../images/dark-grey-terrazzo.png); */
 }
 
 #game-area {
@@ -13,7 +15,7 @@ body {
         'guess target rules'
         'guess target rules'
         'crystal crystal stats';
-    gap: 20px;
+    gap: 15px;
 }
 
 #game-area>div {
@@ -35,7 +37,7 @@ body {
 }
 
 .directions {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #stats {
@@ -55,10 +57,20 @@ body {
     background-color: black;
 }
 
+.number {
+    font-size: 200px;
+    color: orangered;
+}
+
+.numberWin {
+    color: green;
+}
+
 .crystals {
     grid-area: crystal;
     background-color: black;
     display: inline;
+    justify-items: center;
 }
 
 .gem {
