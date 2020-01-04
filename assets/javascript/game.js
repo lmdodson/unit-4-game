@@ -11,6 +11,16 @@ $(document).ready(function() {
 	var num2 = Math.floor(Math.random() * 11 + 1);
 	var num3 = Math.floor(Math.random() * 11 + 1);
 	var num4 = Math.floor(Math.random() * 11 + 1);
+	console.log(
+		"Crystals values are:\n" +
+			num1 +
+			"\n" +
+			num2 +
+			"\n" +
+			num3 +
+			"\n" +
+			num4
+	);
 
 	//set user generated total to 0
 	var userNum = 0;
@@ -64,11 +74,11 @@ $(document).ready(function() {
 	}
 	//!Put it all together
 	//gem clicks
-	$("gem-1").on("click", function() {
+	$(".gem-1").on("click", function() {
 		userNum = userNum + num1;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
-		$("#user-number").text(userNum);
+		$("#user-total").text(userNum);
 		//check win condition
 		if (userNum == targetNum) {
 			$("#user-total").css("color", "green");
@@ -79,11 +89,11 @@ $(document).ready(function() {
 		}
 	});
 
-	$("gem-2").on("click", function() {
-		userNum = userNum + num1;
+	$(".gem-2").on("click", function() {
+		userNum = userNum + num2;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
-		$("#user-number").text(userNum);
+		$("#user-total").text(userNum);
 		//check win condition
 		if (userNum == targetNum) {
 			$("#user-total").css("color", "green");
@@ -94,11 +104,11 @@ $(document).ready(function() {
 		}
 	});
 
-	$("gem-3").on("click", function() {
-		userNum = userNum + num1;
+	$(".gem-3").on("click", function() {
+		userNum = userNum + num3;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
-		$("#user-number").text(userNum);
+		$("#user-total").text(userNum);
 		//check win condition
 		if (userNum == targetNum) {
 			$("#user-total").css("color", "green");
@@ -109,8 +119,8 @@ $(document).ready(function() {
 		}
 	});
 
-	$("gem-4").on("click", function() {
-		userNum = userNum + num1;
+	$(".gem-4").on("click", function() {
+		userNum = userNum + num4;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
 		$("#user-number").text(userNum);
