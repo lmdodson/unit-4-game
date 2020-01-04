@@ -64,8 +64,11 @@ body {
     color: orangered;
 }
 
-.numberWin {
-    color: green;
+#user-total {
+    font-size: 100px;
+    margin-top: 60px;
+    text-align: center;
+    color: lightgray;
 }
 
 .crystals {
