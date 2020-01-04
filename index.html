@@ -9,9 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/resest.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 
+
     <title>Crystal Collector</title>
+
 </head>
 
 <body>
@@ -30,14 +34,15 @@
             <p class="directions">Warning: The crystal value changes with each new game!</p>
         </div>
         <div id="stats">
-            <p class="wins">Wins: <span id="totalWins"></span> </p>
+            <p class="wins">Wins: <span id="total-wins"></span> </p>
             <br><br>
-            <p class="losses">Losses: <span id="totalLosses"></span> </p>
+            <p class="losses">Losses: <span id="total-losses"></span> </p>
         </div>
-        <div id="target-number">
+        <div class="target-number">
             <p>Your target number is: </p>
+            <p id="number"></p>
         </div>
-        <div id="user-number">
+        <div class="user-number">
             <p>Your number: </p>
         </div>
         <div class="crystals">

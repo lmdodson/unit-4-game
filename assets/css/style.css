@@ -47,18 +47,20 @@ body {
 
 }
 
-#target-number {
+.target-number {
     grid-area: target;
     background-color: black;
 }
 
-#user-number {
+.user-number {
     grid-area: guess;
     background-color: black;
 }
 
-.number {
-    font-size: 200px;
+#number {
+    font-size: 100px;
+    margin-top: 60px;
+    text-align: center;
     color: orangered;
 }
 
