@@ -59,8 +59,10 @@ $(document).ready(function() {
 		alert("Sorry, you lost. Try again!");
 		//display in html
 		$("#total-losses");
+		//run the reset
+		reset();
 	}
-
+	//!Put it all together
 	//gem clicks
 	$("gem-1").on("click", function() {
 		userNum = userNum + num1;
@@ -69,8 +71,56 @@ $(document).ready(function() {
 		$("#user-number").text(userNum);
 		//check win condition
 		if (userNum == targetNum) {
+			$("#user-total").css("color", "green");
 			win();
 		} else if (userNum > targetNum) {
+			$("#user-total").css("color", "red");
+			loss();
+		}
+	});
+
+	$("gem-2").on("click", function() {
+		userNum = userNum + num1;
+		console.log("Current user number: " + userNum);
+		//update html with current userNum
+		$("#user-number").text(userNum);
+		//check win condition
+		if (userNum == targetNum) {
+			$("#user-total").css("color", "green");
+			win();
+		} else if (userNum > targetNum) {
+			$("#user-total").css("color", "red");
+			loss();
+		}
+	});
+
+	$("gem-3").on("click", function() {
+		userNum = userNum + num1;
+		console.log("Current user number: " + userNum);
+		//update html with current userNum
+		$("#user-number").text(userNum);
+		//check win condition
+		if (userNum == targetNum) {
+			$("#user-total").css("color", "green");
+			win();
+		} else if (userNum > targetNum) {
+			$("#user-total").css("color", "red");
+			loss();
+		}
+	});
+
+	$("gem-4").on("click", function() {
+		userNum = userNum + num1;
+		console.log("Current user number: " + userNum);
+		//update html with current userNum
+		$("#user-number").text(userNum);
+		//check win condition
+		if (userNum == targetNum) {
+			$("#user-total").css("color", "green");
+			win();
+		} else if (userNum > targetNum) {
+			$("#user-total").css("color", "red");
+			loss();
 		}
 	});
 });
