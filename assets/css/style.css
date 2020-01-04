@@ -8,19 +8,19 @@ body {
 
 #game-area {
     display: grid;
-    grid-template-columns: auto auto 40%;
+    grid-template-columns: 20% 40% 39%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
         'header header header'
-        'guess target rules'
-        'guess target rules'
-        'crystal crystal stats';
-    gap: 15px;
+        'rules target guess'
+        'rules target guess'
+        'rules stats crystal';
+    gap: 5px;
 }
 
 #game-area>div {
     padding: 20px;
-    margin: 20px;
+    margin: 5px;
     align-items: center;
 }
 
@@ -74,13 +74,15 @@ body {
 .crystals {
     grid-area: crystal;
     background-color: black;
-    display: inline;
-    justify-items: center;
+    display: block;
+    text-align: center;
+    width: auto;
 }
 
 .gem {
-    width: 80px;
-    height: 80px;
+    display: block;
+    width: 60px;
+    height: 60px;
     background-size: contain;
     float: left;
     margin: 50px;
@@ -89,17 +91,21 @@ body {
 .gem-1 {
     background-image: url(../images/gemGreen.png);
     background-size: cover;
-    width: 115px;
+    width: 85px;
+    opacity: .3;
 }
 
 .gem-2 {
     background-image: url(../images/gemPurple.png);
+    opacity: .3;
 }
 
 .gem-3 {
     background-image: url(../images/gemRuby.png);
+    opacity: .3;
 }
 
 .gem-4 {
     background-image: url(../images/gemYellow.png);
+    opacity: .3;
 }

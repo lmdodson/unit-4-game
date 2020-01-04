@@ -68,13 +68,18 @@ $(document).ready(function() {
 		//tell user they lost
 		alert("Sorry, you lost. Try again!");
 		//display in html
-		$("#total-losses");
+		$("#total-losses").text(losses);
 		//run the reset
 		reset();
 	}
 	//!Put it all together
 	//gem clicks
 	$(".gem-1").on("click", function() {
+		$(".gem-1").fadeTo("slow", 1);
+		$(".gem-2").fadeTo("slow", 0.3);
+		$(".gem-3").fadeTo("slow", 0.3);
+		$(".gem-4").fadeTo("slow", 0.3);
+
 		userNum = userNum + num1;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
@@ -90,6 +95,11 @@ $(document).ready(function() {
 	});
 
 	$(".gem-2").on("click", function() {
+		$(".gem-1").fadeTo("slow", 0.3);
+		$(".gem-2").fadeTo("slow", 1);
+		$(".gem-3").fadeTo("slow", 0.3);
+		$(".gem-4").fadeTo("slow", 0.3);
+
 		userNum = userNum + num2;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
@@ -105,6 +115,11 @@ $(document).ready(function() {
 	});
 
 	$(".gem-3").on("click", function() {
+		$(".gem-1").fadeTo("slow", 0.3);
+		$(".gem-2").fadeTo("slow", 0.3);
+		$(".gem-3").fadeTo("slow", 1);
+		$(".gem-4").fadeTo("slow", 0.3);
+
 		userNum = userNum + num3;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
@@ -120,10 +135,15 @@ $(document).ready(function() {
 	});
 
 	$(".gem-4").on("click", function() {
+		$(".gem-1").fadeTo("slow", 0.3);
+		$(".gem-2").fadeTo("slow", 0.3);
+		$(".gem-3").fadeTo("slow", 0.3);
+		$(".gem-4").fadeTo("slow", 1);
+
 		userNum = userNum + num4;
 		console.log("Current user number: " + userNum);
 		//update html with current userNum
-		$("#user-number").text(userNum);
+		$("#user-total").text(userNum);
 		//check win condition
 		if (userNum == targetNum) {
 			$("#user-total").css("color", "green");
